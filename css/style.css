@@ -1,5 +1,14 @@
 body {
     font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
 }
 
 header {
@@ -8,6 +17,7 @@ header {
     background-size: cover;
     min-height: 100vh;
     color: #fff;
+
 }
 
 a {
@@ -25,18 +35,13 @@ header a {
 .header-line {
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 15px 20px;
-}
 
-.header-line-phone__block {
-    display: inline-block;
 }
 
 .header-line__block {
+    margin-right: 115px;
     display: flex;
-    align-items: center;
-    margin-right: 215px;
 }
 
 .header-line__logo {
@@ -47,29 +52,76 @@ header a {
     font-size: 36px;
 }
 
+.header-line-navigation {
+    /* margin-right: 110px; */
+    width: 30%;
+}
+
 .header-line-navigation__list {
     display: flex;
     font-size: 14px;
     text-transform: uppercase;
-    margin-right: 110px;
+    justify-content: space-around;
+
 }
 
 .language {
     margin-right: 36px;
 }
+.language-list{
+    padding: 0;
+}
+.language-list li {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.language-list li:nth-child(1) {
+    background-image: url(../images/uz-bg.png);
+    background-repeat: no-repeat;
+    padding: 0 25px;
+}
+
+.language-list li:nth-child(2) {
+    background-image: url(../images/uz-bg.png);
+    background-repeat: no-repeat;
+    padding: 0 25px;
+}
+
+.language-list li:nth-child(3) {
+    background-image: url(../images/uz-bg.png);
+    background-repeat: no-repeat;
+    padding: 0 25px;
+}
 
 .header-line-phone {
     margin-right: 53px;
+    display: flex;
+
+}
+.header-line-phone__logo{
+    margin-right: 10px;
+}
+.header-line-goin{
+display: flex;
+align-items: center;
+}
+.header-line-goin__images{
+    margin-right: 10px;
 }
 
 .sign-in {
     margin-right: 31px;
-  
+    font-size: 12px;
+    text-transform: uppercase;
+
 }
-.register{
+
+.register {
     background: #FFB500;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    padding: 10px 33px 8px 33px ;
+    padding: 10px 33px 8px 33px;
     text-transform: uppercase;
+    align-self: flex-end;
 }
